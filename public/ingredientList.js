@@ -33,10 +33,7 @@ const ingredientList = {
                         <h5 class="card-title">${ingredient.name}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">${ingredient.calories} Calories</h6>
                         <p class="card-text">${ingredient.description}</p>
-                        ${sandwichHasIngredient ? `
-                            <button class="btn btn-danger toggle-button">Remove</button>
-                        ` : `
-                            <button class="btn btn-primary toggle-button">Add</button>
+                        ${sandwichHasIngredient ? `<button class="btn btn-danger toggle-button">Remove</button>` : `<button class="btn btn-primary toggle-button">Add</button>
                         `}
                     </div>
                 </div>
